@@ -7,13 +7,13 @@ pipeline{
 
             }
         }
-    //     stage('Build Docker Image') {
-    //         steps {
-    //             script {
-    //             sh 'docker build -t kindest/node:v1.23.4  .'
-    //             }
-    //         }
-    //     }
+        stage('Build Docker Image') {
+            steps {
+                script {
+                sh 'docker build -t kindest/node:v1.23.4  .'
+                }
+            }
+        }
     //     stage('Deploy Docker Image') {
     //         steps {
     //             script {
